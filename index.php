@@ -15,7 +15,7 @@
     // require "sections/first.html";
     // require "sections/services.html";
     // require "sections/aboutus.html";
-    // require "sections/clients.html";
+    require "sections/clients.html";
     require "sections/footer.html";
     ?>
 </body>
