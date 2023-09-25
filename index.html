@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="sections/tailwind.js"></script>
+    <script src="tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </head>
 
 <body>
-    <nav class="p-3 bg-black shadow md:flex md:items-center md:justify-between">
+    <nav class="p-3  bg-black  shadow md:flex md:items-center md:justify-between text-white   sticky top-0">
         <div class="flex justify-between items-center ">
+
             <span class="text-2xl font-[Poppins] cursor-pointer">
-                <img class="h-12 inline"
-                    src="https://scontent.fcai19-8.fna.fbcdn.net/v/t39.30808-6/380473191_6532601450142560_4443086866058770143_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=49d041&_nc_ohc=IeHS0kca33cAX-v7k0O&_nc_ht=scontent.fcai19-8.fna&oh=00_AfCygvJGVJqygjQnV_xwDfQesTh4gI_9u5UBbyHgW69gOA&oe=65125B52">
+                <a href="#first"> <img class="h-12 inline"
+                        src="https://scontent.fcai19-8.fna.fbcdn.net/v/t39.30808-6/380473191_6532601450142560_4443086866058770143_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=49d041&_nc_ohc=IeHS0kca33cAX-v7k0O&_nc_ht=scontent.fcai19-8.fna&oh=00_AfCygvJGVJqygjQnV_xwDfQesTh4gI_9u5UBbyHgW69gOA&oe=65125B52">
+                </a>
             </span>
 
             <span class="text-3xl cursor-pointer mx-2 md:hidden block ">
@@ -36,30 +40,32 @@
         </div>
 
         <ul
-            class="md:flex md:items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 md:text-white">
+            class="md:flex md:items-center md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-black">
             <li class="mx-4 my-6 md:my-0">
-                <a href="#first" class="text-xl hover:text-yellow-400 duration-500">Home</a>
+                <a href="#first" onclick="Menu(this)" class="text-xl hover:text-yellow-400 duration-500">Home</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="#services" class="text-xl hover:text-yellow-400 duration-500">Services</a>
+                <a href="#services" onclick="Menu(this)" class="text-xl hover:text-yellow-400 duration-500">Services</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="#aboutus" class="text-xl hover:text-yellow-400 duration-500">About</a>
+                <a href="#aboutus" onclick="Menu(this)" class="text-xl hover:text-yellow-400 duration-500">About</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="#clients" class="text-xl hover:text-yellow-400 duration-500">Clients</a>
+                <a href="#clients" onclick="Menu(this)" class="text-xl hover:text-yellow-400 duration-500">Clients</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="#footer" class="text-xl hover:text-yellow-400 duration-500">Contact</a>
+                <a href="#footer" onclick="Menu(this)" class="text-xl hover:text-yellow-400 duration-500">Contact</a>
             </li>
 
 
             <h2 class=""></h2>
         </ul>
     </nav>
+
     <div id="first" class=" flex flex-wrap max-h-screen bg-yellow-400 justify-center ">
-        <span class="w-7/12 lg:text-8xl md:text-6xl text-4xl font-extrabold p-14 ">
+        <span class="w-7/12 lg:text-7xl md:text-6xl text-4xl font-extrabold p-14 ">
             <p>
+                <br>
                 Unleash the Power of Social Media to Boost Your Business.
             </p>
         </span>
@@ -67,7 +73,7 @@
             <img class="w-full object-cover  h-screen  md:block  hidden" src="firstpic.jpg" alt="">
         </span>
     </div>
-    <div id="services" class="nn bg-black font-family-karla h-screen">
+    <div id="services" class=" bg-black font-family-karla h-screen">
         <div class="w-full flex flex-wrap">
             <!-- Image Section -->
             <div class="w-5/12 shadow-2xl">
@@ -78,7 +84,7 @@
 
                 <div
                     class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32 text-white">
-                    <p class="text-center text-4xl m-3 font-bold">Services</p>
+                    <p class="text-center text-4xl m-3 font-bold"><br> Services</p>
                     <p class="text-center font-semibold text-xl">
                         Paid advertising management
                     </p>
@@ -116,14 +122,14 @@
 
         </div>
     </div>
-    <div id="aboutus" class="w-full flex flex-wrap  bg-yellow-400">
+    <div id="aboutus" class="w-full flex flex-wrap  bg-yellow-400 ">
         <div class="w-full md:w-7/12 flex flex-col">
-            <div class="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24"></div>
+            <div class="flex justify-center  md:justify-start pt-12 md:pl-12 md:-mb-24"></div>
 
-            <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
-                <p class="text-center text-4xl m-7 font-bold">About us</p>
-                <br>
-                <p class="text-center font-medium text-4xl mx-2">
+            <div class="flex flex-col justify-center  md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
+                <p class="text-center text-4xl  m-7 font-bold">About us</p>
+
+                <p class="text-center  font-semibold text-4xl mx-2 p-6">
                     At Top Reach, we understand that each business has different needs when it comes to using social
                     media marketing. That’s why we work closely with our clients to create tailored plans that meet
                     their objectives.
@@ -138,14 +144,14 @@
     </div>
     <div id="clients" class="my-2">
         <div class="min-h-36 flex justify-center items-center my-4">
-            <p class="text-4xl mx-16 text-center font-bold">what do our clients say about us?</p>
+            <p class="text-4xl mx-16 text-center font-bold"><br> <br> what do our clients say about us?</p>
         </div>
-        <div class="clients flex md:flex-row flex-col justify-around items-start ">
-            <span class="bg-yellow-200 md:w-1/4 m-4 rounded-xl">
+        <div class="clients flex sm:flex-row flex-col justify-around items-start ">
+            <span class="bg-yellow-200 sm:w-1/4 m-4 rounded-xl">
                 <div class=" bg-yellow-400 max-h-1/4 m-4 p-2 rounded-xl flex items-center justify-center">
-                    <h1 class="font-medium text-3xl">Kevin Brown</h1>
+                    <h1 class="font-bold text-2xl">Kevin Brown</h1>
                 </div>
-                <h2 class="m-4 text-center text-2xl">
+                <h2 class="m-4 text-center text-lg">
                     Working with Top reach has been a game-changer. Their expertise in Facebook and Instagram ads,
                     coupled
                     with their
@@ -155,11 +161,11 @@
                     communication make them invaluable partners.
                 </h2>
             </span>
-            <span class="bg-yellow-200 md:w-1/4 m-4 rounded-xl  ">
+            <span class="bg-yellow-200 sm:w-1/4 m-4 rounded-xl  ">
                 <div class=" bg-yellow-400 max-h-1/4 m-4 p-2 rounded-xl flex items-center justify-center">
-                    <h1 class="font-medium text-3xl">Ryan Johnson</h1>
+                    <h1 class="font-bold text-2xl">Ryan Johnson</h1>
                 </div>
-                <h2 class="m-4 text-center text-2xl">
+                <h2 class="m-4 text-center text-lg">
                     Top reach has been a great help in growing my business's social media presence. They've helped me
                     create
                     engaging
@@ -168,11 +174,11 @@
                     anyone.
                 </h2>
             </span>
-            <span class="bg-yellow-200 md:w-1/4 h-full m-4 rounded-xl  ">
+            <span class="bg-yellow-200 sm:w-1/4 h-full m-4 rounded-xl  ">
                 <div class=" bg-yellow-400 max-h-1/4 m-4 p-2 rounded-xl flex items-center justify-center">
-                    <h1 class="font-medium text-3xl">Emily Williams</h1>
+                    <h1 class="font-bold text-2xl">Emily Williams</h1>
                 </div>
-                <h2 class="m-4 text-center text-2xl">
+                <h2 class="m-4 text-center text-lg">
                     I'm so happy with the work that Top reach has done for my business's social media. They've helped me
                     reach my target
                     audience, increase my engagement, and drive more sales. I would definitely recommend them to anyone
